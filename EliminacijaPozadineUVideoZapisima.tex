@@ -52,7 +52,7 @@ gde je $s$ posmatrani piksel, $t$ posmatrani frejm i $\alpha$ parametar za koju 
 
 Ideja algoritma \emph{Gaussian Mixture Model} je da imamo $K$ klastera. Za svaki klaster računamo matematičko očekivanje i stanardnu devijaciju Gausove raspodele i njihovim kombinovanjem modelujemo svaki piksel. Broj $K$ se određuje za svaki piksel posebno. Implementacija ovog algoritma postoji u OpenCV biblioteci i nju smo koristili za potrebe ovog rada.
 
-\subsection{K nearest neighbours}
+\subsection{K Nearest Neighbours}
 
 Ideja ovog algoritma je da se konstantno ažuriraju parametri Gaussian Mixture Modela i bira odgovarajući broj komponenti za svaki piksel. Koristi se metoda K najbližih suseda. Implementacija ovog algoritma postoji u OpenCV biblioteci i nju smo koristili za potrebe ovog rada.
 
@@ -81,10 +81,37 @@ Na narednim slikama su redom prikazani ulazna slika i rezultati algoritama \emph
     \label{fig:example}
 \end{figure}
 
+Algoritmi su pokretani na tri vrste test primera - saobraćaj za vreme mećave, saobraćaj u standardnim uslovima i noćni snimak nadzorne kamere. Svaki od algoritama je posmatran kao problem klasifikacije i za evaluaciju rezultata korišćene su mere \emph{Precision} i \emph{Recall}.
+
+Ostvareni su sledeći rezulati:
+
+\vspace{5mm}
+
+\begin{tabular}{cc}
+    \begin{minipage}{.5\linewidth}
+        \begin{tabular}{|l|l|l|}
+    \hline
+\thead{BMD} & \thead{GMM} & \thead{KNN} \\ 
+                    \hline
+0.9409 & 0.4237 & 0.5218 \\    \hline
+0.4757 & 0.1820 & 0.2738 \\    \hline
+0.9822 & 0.8972 & 0.8872 \\    \hline
+\end{tabular}
+    \end{minipage} &
+
+    \begin{minipage}{.5\linewidth}
+        \begin{tabular}{|l|l|l|}
+    \hline
+\thead{BMD} & \thead{GMM} & \thead{KNN} \\ 
+                    \hline
+0.4528 & 0.9414 & 0.9157 \\    \hline
+0.7833 & 0.8926 & 0.9025 \\    \hline
+0.9436 & 0.7184 & 0.9068 \\    \hline
+\end{tabular}
+    \end{minipage} 
+\end{tabular}
 
 
-\section{Zaključak}
-\label{sec:zakljucak}
 
 
 \end{document}
