@@ -7,6 +7,7 @@
 \usepackage[T2A]{fontenc} % enable Cyrillic fonts
 \usepackage[utf8]{inputenc} % make weird characters work
 \usepackage{graphicx}
+\usepackage{subfig}
 
 \usepackage[english,serbian]{babel}
 %\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
@@ -32,89 +33,58 @@
 \section{Uvod}
 \label{sec:uvod}
 
-Algoritmi za eliminaciju pozadine u video zapisima su algoritmi koji imaju za cilj detekciju kretanja i odvajanje pozadine od objekata koji se kreću. Problem eliminacije pozadine je bitan problem obrade slika i 
-
+Algoritmi za eliminaciju pozadine u video zapisima su algoritmi koji imaju za cilj detekciju kretanja i odvajanje pozadine od objekata koji se kreću. CIlj ovog rada je upoznavanje različitim algoritmima za detekciju kretanja i njihovo poređenje.
 
 \section{Primenjeni algoritmi}
 \label{sec:algoritmi}
 
-U ovom radu smo poredili tri različita algoritma za eliminaciju pozadine u video zapisima. Ti algoritmi su: \emph{Basic motion detection}, \emph{Gaussian Mixture Model} i \emph{K Nearest Neighbours}. Ideja svakog od ovih algoritama je da transformišu ulazni video u novi video u kojem će pozadina biti ofarbana u crno a objekti koji se kreću u belo, kako bi se oni izdvojili. U nastavku rada će ovi algoritmi biti predstavljeni.
+U ovom radu smo poredili tri različita algoritma za eliminaciju pozadine u video zapisima. Ti algoritmi su: \emph{Basic Motion Detection (BMD)}, \emph{Gaussian Mixture Model (GMM)} i \emph{K Nearest Neighbours (KNN)}. Ideja svakog od ovih algoritama je da transformišu ulazni video u novi video u kojem će pozadina biti ofarbana u crno a objekti koji se kreću u belo, kako bi se oni izdvojili. U nastavku rada će ovi algoritmi biti predstavljeni.
 
 \subsection{Basic Motion Detection}
 
 \emph{Basic Motion Detection} je najjednostavniji algoritam od predstavljenih algoritama. U ovom algoritmu se polazi od pretpostavke da se video $I$ sastoji od statičke pozadine $B$ ispred koje se nalaze objekti koji se kreću. Kako bismo detektovali objekte računa se rastojanje trenutnog modela pozadine i posmatranog frejma. Na osnovu ovog rastojanja pravi se rezultujuća crno-bela slika. 
 
 Model pozadine se ažurira na osnovu prethodnog stanja i trenutno posmatranog frejma po sledećoj formuli: 
-\\
 $B_{s,t+1} = (1 - \alpha) * B_{s,t} + \alpha * I_{s,t}$
-\\
 gde je $s$ posmatrani piksel, $t$ posmatrani frejm i $\alpha$ parametar za koju je uzeta vrednost $0.001$. Za početnu vrednost modela pozadine $B$ je uzet prvi frejm, dok je rastojanje između frejma i modela računato na osnovu Euklidskog rastojanja.
 
+\subsection{Gaussian Mixture Model}
+
+Ideja algoritma \emph{Gaussian Mixture Model} je da imamo $K$ klastera. Za svaki klaster računamo matematičko očekivanje i stanardnu devijaciju Gausove raspodele i njihovim kombinovanjem modelujemo svaki piksel. Broj $K$ se određuje za svaki piksel posebno. Implementacija ovog algoritma postoji u OpenCV biblioteci i nju smo koristili za potrebe ovog rada.
+
+\subsection{K nearest neighbours}
+
+Ideja ovog algoritma je da se konstantno ažuriraju parametri Gaussian Mixture Modela i bira odgovarajući broj komponenti za svaki piksel. Koristi se metoda K najbližih suseda. Implementacija ovog algoritma postoji u OpenCV biblioteci i nju smo koristili za potrebe ovog rada.
 
 
-\begin{verbatim}
-
-class SkipListNode(object):
-
-    def __init__(self, key=None, level=None):
-        self.key = key  # vrednost čvora
-        self.forward =[None]*(level+1)  # niz pokazivaca
-        self.d = [None]*(level+1)  # niz pomoćnih promenljivih
-
-\end{verbatim}
-
-Prilikom umetanja novog elementa u skip listu potrebno je da čuvamo niz $update$ u koji za svaki nivo smeštamo poslednji čvor koji smo obišli dok smo tražili mesto za naš novi element. Na slici 1. je crvenom bojom označen put i elementi koji bi u tom primeru bili u nizu $update$. Niz $update$ će nam biti potreban da bismo prevezali pokazivače i time dodali novi element u skip listu. Sada kad smo dodali novi element, upravo elementima iz niza $update$ bi trebalo ažurirati niz $d$. Takođe potrebno je i inicijalno izračunati vrednosti niza $d$ za novododati element.
-
-Ažuriranje niza d za elemente niza update sa indeksima većim od nivoa novododatog čvora je jednostavno, potrebno je samo povećati vrednost za jedan. Međutim, u slučaju indeksa koji su manji ili jednaki nivou novog čvora, vrednost d možemo izračunati na osnovu stare vrednosti i vrednosti d za novi čvor. Potrebno je od stare vrednost d elemenata niza update oduzeti vrednost d za novi čvor i dodati jedan. Slično se radi i u slučaju brisanja elemenata iz skip liste, samo što u tom slučaju umesto sabiranja radimo oduzimanje, i obrnuto. Na ovaj način možemo jednostavnim lokalnim izmenama da ažuriramo vrednost d i time ne ugrozimo vremensku složenost algoritma.
-
-\section{Implementacija algoritma}
-\label{sec:algoritam}
-
-Sada kada smo predstavili kako izgleda struktura skip liste, i kako se ona održava prilikom dodavanja novog elementa, ostaje nam samo da napravimo funkciju koja nalazi $k$-ti najveći element u skip listi. Pošto imamo pomoćni niz $d$ u svakom čvoru, ovo će sada biti jednostavno. 
-
-\begin{verbatim}
-
-    def findKLargest(self, k):
-        current = self.head
-        pos = 0
-        for i in range(self.level, -1, -1):
-            # dokle god nismo prosli dovoljno elemenata pomeramo se
-            # na sledeći pokazivač i ažuriramo broj elemenata pos
-            while current.forward[i] and (pos + current.d[i]) <= k:
-                pos = pos + current.d[i]
-                current = current.forward[i]
-            if pos == k:
-                # kada dođemo do k vraćamo rezultat
-                return current.key
-
-\end{verbatim}
-
-Krećemo od prvog čvora na najvišem nivou i pomeramo se po tom nivou dokle god ne pređemo broj elemenata veći od $k$. To proveravamo sa $(pos + current.d[i]) <= k$. U svakom koraku pomeramo se na sledeći pokazivač i povećavamo broj $pos$. Na kraju ćemo doći do $k$-tog elementa i to vratiti kao rezultat. Vremenska složenost ovog algoritma za skip listu od $n$ elemenata je $O(logn)$. 
-
-
-\section{Efikasnost algoritma}
+\section{Evaluacija algoritma}
 \label{sec:efikasnost}
 
-Naredne dve slike prikazuju vreme izvršavanja umetanja i brisanja novog elementa u zavisnosti od broja elemenata u skip listi izražene u sekundama. 
+Na narednim slikama su redom prikazani ulazna slika i rezultati algoritama \emph{BMD}, \emph{GMM} i \emph{KNN}.
 
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.6]{inserting.png}
-\end{center}
-\caption{Vreme umetanja novog elementa izraženo u sekundama u zavisnosti od broja elemenata u skip listi}
-\label{skiplist}
+\begin{figure}
+    \centering
+    \subfloat[Original]{{\includegraphics[width=5cm]{dataset/slike/original.jpg} }}
+    \qquad
+    \subfloat[BMD]{{\includegraphics[width=5cm]{dataset/slike/bmd.jpg} }}
+    \caption{Originalna slika i rezultat BMD algoritma}}
+    \label{fig:example}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \subfloat[GMM]{{\includegraphics[width=5cm]{dataset/slike/mog2.jpg} }}
+    \qquad
+    \subfloat[KNN]{{\includegraphics[width=5cm]{dataset/slike/knn.jpg} }}
+    \caption{Rezultati GMM i KNN algoritama}}
+    \label{fig:example}
 \end{figure}
 
 
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.6]{deleting.png}
-\end{center}
-\caption{Vreme brisanja elementa izraženo u sekundama u zavisnosti od broja elemenata u skip listi}
-\label{skiplist}
-\end{figure}
+\section{Zaključak}
+\label{sec:zakljucak}
 
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.31)  11 SEP 2019 23:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.31)  12 SEP 2019 01:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,6 +581,39 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@ContinuedFloat=\count87
+)
+\c@KVtest=\count88
+\sf@farskip=\skip43
+\sf@captopadj=\dimen112
+\sf@capskip=\skip44
+\sf@nearskip=\skip45
+\c@subfigure=\count89
+\c@subfigure@save=\count90
+\c@lofdepth=\count91
+\c@subtable=\count92
+\c@subtable@save=\count93
+\c@lotdepth=\count94
+\sf@top=\skip46
+\sf@bottom=\skip47
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
 
@@ -592,11 +625,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count87
-\U@D=\dimen105
+\babel@savecnt=\count95
+\U@D=\dimen113
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count88
+\bbl@dirlevel=\count96
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -662,16 +695,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen106
-\Hy@linkcounter=\count89
-\Hy@pagecounter=\count90
+\@linkdim=\dimen114
+\Hy@linkcounter=\count97
+\Hy@pagecounter=\count98
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count91
+\Hy@SavedSpaceFactor=\count99
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -690,12 +723,12 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count92
+\c@Hy@tempcnt=\count100
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen107
-\Fld@menulength=\count93
-\Field@Width=\dimen108
-\Fld@charsize=\dimen109
+\XeTeXLinkMargin=\dimen115
+\Fld@menulength=\count101
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -705,67 +738,64 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count94
-\c@Item=\count95
-\c@Hfootnote=\count96
+\Hy@abspage=\count102
+\c@Item=\count103
+\c@Hfootnote=\count104
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count97
-\c@bookmark@seq@number=\count98
+\Fld@listcount=\count105
+\c@bookmark@seq@number=\count106
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip43
+\Hy@SectionHShift=\skip48
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 15.
-\c@primer=\count99
+Package hyperref Info: Option `colorlinks' set `true' on input line 16.
+\c@primer=\count107
 
 (./EliminacijaPozadineUVideoZapisima.aux
 
-LaTeX Warning: Label `skiplist' multiply defined.
-
-
-LaTeX Warning: Label `skiplist' multiply defined.
+LaTeX Warning: Label `fig:example' multiply defined.
 
 )
 \openout1 = `EliminacijaPozadineUVideoZapisima.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen110
+\scratchcounter=\count108
+\scratchdimen=\dimen118
 \scratchbox=\box26
-\nofMPsegments=\count101
-\nofMParguments=\count102
+\nofMPsegments=\count109
+\nofMParguments=\count110
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen111
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen119
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks18
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -784,8 +814,12 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring ON on input line 20.
+Package hyperref Info: Link coloring ON on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -793,11 +827,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count106
+\c@section@level=\count114
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./EliminacijaPozadineUVideoZapisima.out)
 (./EliminacijaPozadineUVideoZapisima.out)
@@ -805,11 +839,11 @@ LaTeX Info: Redefining \nameref on input line 20.
 \openout3 = `EliminacijaPozadineUVideoZapisima.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 27.
+(Font)              <12> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 27.
+(Font)              <8> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 27.
+(Font)              <6> on input line 28.
 
 (./EliminacijaPozadineUVideoZapisima.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -823,94 +857,81 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 51.
+<dataset/slike/original.jpg, id=53, 722.7pt x 481.8pt>
+File: dataset/slike/original.jpg Graphic file (type jpg)
+<use dataset/slike/original.jpg>
+Package pdftex.def Info: dataset/slike/original.jpg  used on input line 68.
+(pdftex.def)             Requested size: 142.26378pt x 94.84384pt.
+<dataset/slike/bmd.jpg, id=54, 722.7pt x 481.8pt>
+File: dataset/slike/bmd.jpg Graphic file (type jpg)
+<use dataset/slike/bmd.jpg>
+Package pdftex.def Info: dataset/slike/bmd.jpg  used on input line 70.
+(pdftex.def)             Requested size: 142.26378pt x 94.84384pt.
 
- (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [2]
-Overfull \hbox (6.66412pt too wide) in paragraph at lines 86--86
-[]            \T2A/cmtt/m/n/10 # dokle god nismo prosli dovoljno elemenata pome
-ramo se[] 
- []
-
-
-Overfull \hbox (6.66412pt too wide) in paragraph at lines 86--86
-[]            \T2A/cmtt/m/n/10 while current.forward[i] and (pos + current.d[i]
-) <= k:[] 
- []
-
-
-LaTeX Warning: File `inserting.png' not found on input line 99.
-
-
-! Package pdftex.def Error: File `inserting.png' not found: using draft setting
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 \includegraphics[scale=0.6]{inserting.png}
-                                               
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.73 \end{figure}
+                 
 ? 
-
-LaTeX Warning: File `deleting.png' not found on input line 109.
-
-
-! Package pdftex.def Error: File `deleting.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 \includegraphics[scale=0.6]{deleting.png}
-                                               
+<dataset/slike/mog2.jpg, id=55, 722.7pt x 481.8pt>
+File: dataset/slike/mog2.jpg Graphic file (type jpg)
+<use dataset/slike/mog2.jpg>
+Package pdftex.def Info: dataset/slike/mog2.jpg  used on input line 77.
+(pdftex.def)             Requested size: 142.26378pt x 94.84384pt.
+<dataset/slike/knn.jpg, id=56, 722.7pt x 481.8pt>
+File: dataset/slike/knn.jpg Graphic file (type jpg)
+<use dataset/slike/knn.jpg>
+Package pdftex.def Info: dataset/slike/knn.jpg  used on input line 79.
+(pdftex.def)             Requested size: 142.26378pt x 94.84384pt.
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.82 \end{figure}
+                 
 ? 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
-[3] [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+[2] [3 <./dataset/slike/original.jpg> <./dataset/slike/bmd.jpg> <./dataset/slik
+e/mog2.jpg> <./dataset/slike/knn.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
  (./EliminacijaPozadineUVideoZapisima.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `EliminacijaPozadineUVideoZapisima.out' has n
 ot changed.
-(rerunfilecheck)             Checksum: 1246996A12DAF2F0840905F7A7A2886A;694.
+(rerunfilecheck)             Checksum: 8CCDEFC9D0BC8C24AE44EB23D098C7AE;955.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 9730 strings out of 492982
- 133096 string characters out of 6134895
- 206355 words of memory out of 5000000
- 13202 multiletter control sequences out of 15000+600000
- 14195 words of font info for 34 fonts, out of 8000000 for 9000
+ 10913 strings out of 492982
+ 154293 string characters out of 6134895
+ 230130 words of memory out of 5000000
+ 14371 multiletter control sequences out of 15000+600000
+ 14519 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,7n,28p,736b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,49p,507b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on EliminacijaPozadineUVideoZapisima.pdf (4 pages, 212281 bytes)
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
+000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm09
+00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti100
+0.pfb>
+Output written on EliminacijaPozadineUVideoZapisima.pdf (3 pages, 234567 bytes)
 .
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
