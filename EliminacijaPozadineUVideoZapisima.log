@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.31)  12 SEP 2019 01:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.31)  23 SEP 2019 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -857,122 +857,148 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<dataset/slike/original.jpg, id=48, 722.7pt x 481.8pt>
+
+LaTeX Warning: Command \o invalid in math mode on input line 54.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 54.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 55.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 55.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 56.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 56.
+
+[2]
+<dataset/slike/original.jpg, id=60, 722.7pt x 481.8pt>
 File: dataset/slike/original.jpg Graphic file (type jpg)
 <use dataset/slike/original.jpg>
-Package pdftex.def Info: dataset/slike/original.jpg  used on input line 68.
+Package pdftex.def Info: dataset/slike/original.jpg  used on input line 78.
 (pdftex.def)             Requested size: 142.26378pt x 94.84384pt.
-<dataset/slike/bmd.jpg, id=49, 722.7pt x 481.8pt>
+<dataset/slike/bmd.jpg, id=61, 722.7pt x 481.8pt>
 File: dataset/slike/bmd.jpg Graphic file (type jpg)
 <use dataset/slike/bmd.jpg>
-Package pdftex.def Info: dataset/slike/bmd.jpg  used on input line 70.
+Package pdftex.def Info: dataset/slike/bmd.jpg  used on input line 80.
 (pdftex.def)             Requested size: 142.26378pt x 94.84384pt.
 
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.73 \end{figure}
+l.83 \end{figure}
                  
 ? 
-<dataset/slike/mog2.jpg, id=50, 722.7pt x 481.8pt>
+<dataset/slike/mog2.jpg, id=62, 722.7pt x 481.8pt>
 File: dataset/slike/mog2.jpg Graphic file (type jpg)
 <use dataset/slike/mog2.jpg>
-Package pdftex.def Info: dataset/slike/mog2.jpg  used on input line 77.
+Package pdftex.def Info: dataset/slike/mog2.jpg  used on input line 87.
 (pdftex.def)             Requested size: 142.26378pt x 94.84384pt.
-<dataset/slike/knn.jpg, id=51, 722.7pt x 481.8pt>
+<dataset/slike/knn.jpg, id=63, 722.7pt x 481.8pt>
 File: dataset/slike/knn.jpg Graphic file (type jpg)
 <use dataset/slike/knn.jpg>
-Package pdftex.def Info: dataset/slike/knn.jpg  used on input line 79.
+Package pdftex.def Info: dataset/slike/knn.jpg  used on input line 89.
 (pdftex.def)             Requested size: 142.26378pt x 94.84384pt.
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.82 \end{figure}
+l.92 \end{figure}
                  
 ? 
-[2]
+[3 <./dataset/slike/original.jpg> <./dataset/slike/bmd.jpg> <./dataset/slike/mo
+g2.jpg> <./dataset/slike/knn.jpg>]
 ! Undefined control sequence.
 <recently read> \thead 
                        
-l.94 \thead
-           {BMD} & \thead{GMM} & \thead{KNN} \\
-? 
-! Undefined control sequence.
-l.94 \thead{BMD} & \thead
-                         {GMM} & \thead{KNN} \\
-? 
-! Undefined control sequence.
-l.94 \thead{BMD} & \thead{GMM} & \thead
-                                       {KNN} \\
-? 
-! Undefined control sequence.
-<recently read> \thead 
-                       
-l.105 \thead
+l.104 \thead
             {BMD} & \thead{GMM} & \thead{KNN} \\
 ? 
 ! Undefined control sequence.
-l.105 \thead{BMD} & \thead
+l.104 \thead{BMD} & \thead
                           {GMM} & \thead{KNN} \\
 ? 
 ! Undefined control sequence.
-l.105 \thead{BMD} & \thead{GMM} & \thead
+l.104 \thead{BMD} & \thead{GMM} & \thead
+                                        {KNN} \\
+? 
+! Undefined control sequence.
+<recently read> \thead 
+                       
+l.115 \thead
+            {BMD} & \thead{GMM} & \thead{KNN} \\
+? 
+! Undefined control sequence.
+l.115 \thead{BMD} & \thead
+                          {GMM} & \thead{KNN} \\
+? 
+! Undefined control sequence.
+l.115 \thead{BMD} & \thead{GMM} & \thead
                                         {KNN} \\
 ? 
 
-Overfull \hbox (39.0pt too wide) in paragraph at lines 90--113
+Overfull \hbox (39.0pt too wide) in paragraph at lines 100--123
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-[3 <./dataset/slike/original.jpg> <./dataset/slike/bmd.jpg> <./dataset/slike/mo
-g2.jpg> <./dataset/slike/knn.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+! Undefined control sequence.
+<recently read> \thead 
+                       
+l.130 \thead
+            {BMD} & \thead{GMM} & \thead{KNN} \\
+? 
+! Undefined control sequence.
+l.130 \thead{BMD} & \thead
+                          {GMM} & \thead{KNN} \\
+? 
+! Undefined control sequence.
+l.130 \thead{BMD} & \thead{GMM} & \thead
+                                        {KNN} \\
+? 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
  (./EliminacijaPozadineUVideoZapisima.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
+Package rerunfilecheck Info: File `EliminacijaPozadineUVideoZapisima.out' has n
+ot changed.
+(rerunfilecheck)             Checksum: 2CCD022342D7C38490BA49CF6353AFED;864.
 
-
-Package rerunfilecheck Warning: File `EliminacijaPozadineUVideoZapisima.out' ha
-s changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `EliminacijaPozadineUVideoZapisima.o
-ut':
-(rerunfilecheck)             Before: 7F22CDD1A3BC4349857D3262CAF0DCE0;864
-(rerunfilecheck)             After:  2CCD022342D7C38490BA49CF6353AFED;864.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 10911 strings out of 492982
- 154263 string characters out of 6134895
- 230097 words of memory out of 5000000
- 14370 multiletter control sequences out of 15000+600000
+ 10920 strings out of 492982
+ 154376 string characters out of 6134895
+ 229097 words of memory out of 5000000
+ 14378 multiletter control sequences out of 15000+600000
  14519 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,14n,49p,507b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,14n,49p,732b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
-000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm09
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti100
-0.pfb>
-Output written on EliminacijaPozadineUVideoZapisima.pdf (3 pages, 237602 bytes)
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on EliminacijaPozadineUVideoZapisima.pdf (4 pages, 260254 bytes)
 .
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

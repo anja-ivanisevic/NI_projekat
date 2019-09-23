@@ -3,5 +3,5 @@
 \contentsline {section}{\numberline {2}Primenjeni algoritmi}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Basic Motion Detection}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Gaussian Mixture Model}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}K Nearest Neighbours}{2}{subsection.2.3}
-\contentsline {section}{\numberline {3}Evaluacija algoritma}{2}{section.3}
+\contentsline {subsection}{\numberline {2.3}K Nearest Neighbours}{3}{subsection.2.3}
+\contentsline {section}{\numberline {3}Evaluacija algoritma}{3}{section.3}

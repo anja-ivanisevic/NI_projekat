@@ -50,12 +50,22 @@ gde je $s$ posmatrani piksel, $t$ posmatrani frejm i $\alpha$ parametar za koju 
 
 \subsection{Gaussian Mixture Model}
 
-Ideja algoritma \emph{Gaussian Mixture Model} je da imamo $K$ klastera. Za svaki klaster računamo matematičko očekivanje i stanardnu devijaciju Gausove raspodele i njihovim kombinovanjem modelujemo svaki piksel. Broj $K$ se određuje za svaki piksel posebno. Implementacija ovog algoritma postoji u OpenCV biblioteci i nju smo koristili za potrebe ovog rada.
+Ideja algoritma \emph{Gaussian Mixture Model} jeste da u svakom trenutku $t$ sa osnovu poslednjih $T$ frejmova računamo verovatnoću da se određena boja javi u posmatranom pikselu. Verovatnoća se računa kombinovanjem najviše $M$ Gausovih raspodela po formuli: $p = \sum_{m = 1}^{M} \pi_m N (x, \mu_m, \sigma_m^2)$ , a u kojima konfigurišu parametri $\pi$, $\mu$ i $\sigma^2$ koje iterativno ažuriramo po sledećim formulama: \\
+$\pi_m \leftarrow \pi_m + \alpha (\o_m - \pi_m)$,\\
+$\mu_m \leftarrow \mu_m + \o_m (\alpha / \pi_m) \delta_m$,\\
+$\sigma_m^2 \leftarrow \sigma_m^2 + \o_m (\alpha / \pi_m) (\delta_m^T \delta_m - \sigma_m^2)$.\\
+Za svaki novi piksel, parametar $o_m$ će biti jednak $1$ za komponentu sa najvećim $\pi$ ako je \emph{"blizu"} posmatranog piksela, u suprotnom će biti jednak $0$. Kažemo da je piksel \emph{"blizu"} komponente ako je Mahalanobisovo rastojanje manje od neke unapred zadate granice (na primer $3$). Ako nijedna komponenta nije \emph{"blizu"} posmatranog piksela, generišemo novu komponentu sa sledećim parametrima: 
+
+Ako smo dostigli maksimalan broj komponenti $M$, tada ćemo zameniti komponentu sa najmanjom vrednošću parametra $\pi$ sa novokreiranom komponentom.
+
+Model pozadine će se sastojati od $B$ komponenti sa najvećim vrednostima parametra $\pi$, dok će ostale komponente predstavljati objekte koji se kreću. Broj $B$ se računa po formuli:\\
+$B = \arg\min_{b} (\sum_{m = 1}^{b} \pi_m > (1 - c_f))$.
+
+Implementacija ovog algoritma postoji u OpenCV biblioteci i nju smo koristili za potrebe ovog rada.
 
 \subsection{K Nearest Neighbours}
 
-Ideja ovog algoritma je da se konstantno ažuriraju parametri Gaussian Mixture Modela i bira odgovarajući broj komponenti za svaki piksel. Koristi se metoda K najbližih suseda. Implementacija ovog algoritma postoji u OpenCV biblioteci i nju smo koristili za potrebe ovog rada.
-
+Ovaj algoritam predstavlja unapređenje algoritma \emph{Kernel density estimation} algoritma. Za razliku od njega gde smo koristili fiksnu veličinu kernela $D$ ovom algoritmu prilagođavamo $D$ za svaki piksel posebno. Umesto da pokušavamo da nađemo $D$ koje je globalno optimalno, mi povećavamo širinu $D$ dokle god unapred zadata količina podataka nije pokrivena. Na ovaj način dobijamo velike kernele u oblastima sa malom količinom podataka i male kernele gde je gustina podataka veća. Ovaj alogirtam daje jako dobre rezultate ako ima malo objekata koji se kreću. Implementacija ovog algoritma postoji u OpenCV biblioteci i nju smo koristili za potrebe ovog rada.
 
 \section{Evaluacija algoritma}
 \label{sec:efikasnost}
@@ -81,7 +91,7 @@ Na narednim slikama su redom prikazani ulazna slika i rezultati algoritama \emph
     \label{fig:example}
 \end{figure}
 
-Algoritmi su pokretani na tri vrste test primera - saobraćaj za vreme mećave, saobraćaj u standardnim uslovima i noćni snimak nadzorne kamere. Svaki od algoritama je posmatran kao problem klasifikacije i za evaluaciju rezultata korišćene su mere \emph{Precision} i \emph{Recall}.
+Algoritmi su pokretani na tri vrste test primera - saobraćaj za vreme mećave, saobraćaj u standardnim uslovima i noćni snimak nadzorne kamere. Svaki od algoritama je posmatran kao problem klasifikacije i za evaluaciju rezultata korišćene su mere \emph{Precision}, \emph{Recall} i \emph{F1 mera}.
 
 Ostvareni su sledeći rezulati:
 
@@ -111,7 +121,19 @@ Ostvareni su sledeći rezulati:
     \end{minipage} 
 \end{tabular}
 
+\vspace{5mm}
 
+\begin{center}
+
+\begin{tabular}{|l|l|l|}
+    \hline
+\thead{BMD} & \thead{GMM} & \thead{KNN} \\ 
+                    \hline
+0,6114 & 0,5844 & 0,6648 \\    \hline
+0,5919 & 0,3023 & 0,4201 \\    \hline
+0,9625 & 0,7979 & 0,8969 \\    \hline
+\end{tabular}
+\end{center}
 
 
 \end{document}
